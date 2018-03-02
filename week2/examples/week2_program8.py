@@ -1,7 +1,10 @@
 # Week2, Program8
 
-c = 1
+name = input("What is your name ?: ")
 
-while c <= 10:
-    print(c)
-    c += 1      # Adds 1 to c
+if name == "Dave":
+    print("You are my creator, Dave !")
+    print("How are you today ?")
+else:
+    print("Hello " + name)
+    print("How are you today ?")
