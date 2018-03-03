@@ -9,8 +9,6 @@ while counter <= 1000:
 
 print(total)
 
-
-
 # For Super Extra Credit.
 # Pair numbers at each end of the spectrum, like :-
 # 1 and 1000, 2 and 999, 3 and 998 etc ...
