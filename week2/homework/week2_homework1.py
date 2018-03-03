@@ -1,4 +1,4 @@
-# Week2, Homework5
+# Week2, Homework1
 
 firstname = input("What is your First Name ?: ")
 surname = input("What is your Surname ?: ")

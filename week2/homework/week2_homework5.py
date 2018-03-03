@@ -1,4 +1,4 @@
-# Week2, Program14
+# Week2, Homework5
 
 counter = 1
 total = 0

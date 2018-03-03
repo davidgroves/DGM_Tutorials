@@ -1,4 +1,4 @@
-# Week2, Program11
+# Week2, Homework2
 
 i = 2
 
