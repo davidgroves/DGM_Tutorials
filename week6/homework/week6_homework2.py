@@ -1,4 +1,4 @@
-# Chaos Game
+# Week6, Homework2
 
 from PIL import Image, ImageDraw, ImageFont
 import random
@@ -20,7 +20,7 @@ draw.line(a + c)
 draw.line(b + c)
 
 # Select a random starting point.
-point = (random.randint(0,500), random.randint(0,500))
+point = [random.randint(0,500), random.randint(0,500)]
 
 # We will repeat this 1 million times.
 i = 0

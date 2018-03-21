@@ -1,4 +1,4 @@
-# Chaos Game
+# Week6, Homework3
 
 from PIL import Image, ImageDraw, ImageFont
 import random
@@ -10,9 +10,9 @@ image = Image.new("1", (500,500), color=1)
 # Make a drawing layer so we can draw on the image
 draw = ImageDraw.Draw(image)
 
-a = [0,0]          # The top left of our triangle
-b = [250,500]      # The middle bottom of our triangle
-c = [500,0]        # The top right of our triangle
+a = [0,500]
+b = [250,0]
+c = [500,500]
 
 # Draw the outline
 draw.line(a + b)
@@ -20,7 +20,7 @@ draw.line(a + c)
 draw.line(b + c)
 
 # Select a random starting point.
-point = (random.randint(0,500), random.randint(0,500))
+point = [random.randint(0,500), random.randint(0,500)]
 
 # We will repeat this 1 million times.
 i = 0

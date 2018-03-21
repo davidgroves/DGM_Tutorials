@@ -1,4 +1,4 @@
-# Week6, Example1
+# Week6, Example2
 
 print("No modules are imported")
 
