@@ -16,15 +16,15 @@ print(a == "Hello" or b == "World" or c == "Hello")
 print(a != "Hello" or b == "World" or 4 < 6)
 
 # Mixing and/or without brackets (not recommended !)
-print (1 == 2 and 2 == 2 or 3 == 4)
-print (a == b or 5 == 4 and 3 == 3)
+print(1 == 2 and 2 == 2 or 3 == 4)
+print(a == b or 5 == 4 and 3 == 3)
 
 # Mixing and/or with brackets (recommended)
-print ((1 == 2 and 2 == 2) or 3 == 4)
-print (1 == 2 and (2 == 2 or 3 == 4))
-print ((a == b or 5 == 4) and 3 == 3)
+print((1 == 2 and 2 == 2) or 3 == 4)
+print(1 == 2 and (2 == 2 or 3 == 4))
+print((a == b or 5 == 4) and 3 == 3)
 
 # More complex examples
-print ((1 == 2 and 3 == 4) or (4 == 5 and 4 == 4))
-print ((1 == 2 and 3 == 4) or (5 == 5 and 4 == 4))
-print ((1 == 1 or 3 == 4) and (2 == 3 or 4 == 4))
+print((1 == 2 and 3 == 4) or (4 == 5 and 4 == 4))
+print((1 == 2 and 3 == 4) or (5 == 5 and 4 == 4))
+print((1 == 1 or 3 == 4) and (2 == 3 or 4 == 4))
