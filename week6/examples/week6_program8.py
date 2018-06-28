@@ -1,4 +1,4 @@
-# Week6, Example7
+# Week6, Program8
 
 from PIL import Image, ImageDraw, ImageFont
 
