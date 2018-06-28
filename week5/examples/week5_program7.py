@@ -1,4 +1,4 @@
-# Week5, Example7
+# Week5, Program7
 
 moons = {"Earth": "Luna", "Mars": ["Phobos", "Deimos"]}
 

@@ -1,4 +1,4 @@
-# Week5, Example9
+# Week5, Program9
 
 # Replace or open a file for writing.
 yourfile = open("helloworld.txt", "w")

@@ -1,4 +1,4 @@
-# Week5, Example4
+# Week5, Program4
 
 pm = {}     # Make an empty dictionary.
 

@@ -1,4 +1,4 @@
-# Week5, Example11
+# Week5, Program11
 
 yourfile = open("helloworld.txt", "r")
 # Read each line into a list (with newline characters).
