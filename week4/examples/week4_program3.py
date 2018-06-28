@@ -2,11 +2,9 @@
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
-print(f"{alphabet[:4]} are the first 4 letters of the alphabet")
-print(f"{alphabet[4:]} are the rest (until h)")
+print(f"The last element of the list is {alphabet[-1]}")
+print(f"The last 3 elements of the list are {alphabet[-3:]}")
 
-print(alphabet[3:5])
-print(alphabet[2:5])
-
-print(alphabet[6:])
-print(alphabet[5:])
+print(alphabet[-4])
+print(alphabet[-4:])
+print(alphabet[-2:])
