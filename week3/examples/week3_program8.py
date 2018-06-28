@@ -1,12 +1,14 @@
 # Week3, Program8
 
-print(2 / 4)
-print(2.0 / 4.0)
-print(2 / 4.0)
+a = 45
+b = 332
 
-print(4 / 2)
-print(2 + 1 / 3)
-print(1 / 3)
-print(4 / 3)
-print(0.75 / 0.25)
-print(45 / 332)
+c = a / b
+
+print(f"{c}")
+print(f"{c:.1}")
+print(f"{c:.2}")
+print(f"{c:.3}")
+print(f"{c:.4}")
+print(f"{c:.5}")
+print(f"{c:.6}")

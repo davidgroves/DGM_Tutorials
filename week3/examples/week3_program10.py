@@ -1,13 +1,16 @@
 # Week3, Program10
 
-a = ["Hello", "World"]
+a = ["four", "six", "eight", "ten"]
 print(a)
 
-b = [1, 1, 2, 3, 5, 8]
-print(b)
+a.append("twelve")
+print(a)
 
-c = [1.1, 2.2, 3.3, 4.4]
-print(c)
+a.insert(0, "two")
+print(a)
 
-d = ["Hello", -1, 3.1415]
-print(d)
+a.insert(2, "between four and six")
+print(a)
+
+a.insert(4, "between what numbers ?")
+print(a)

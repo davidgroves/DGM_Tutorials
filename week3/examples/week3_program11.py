@@ -1,16 +1,10 @@
 # Week3, Program11
 
-a = ["four", "six", "eight", "ten"]
-print(a)
+primes = [2,3,5,7,11]
+print(primes)
 
-a.append("twelve")
-print(a)
+primes.extend([13,17,19])
+print(primes)
 
-a.insert(0, "two")
-print(a)
-
-a.insert(2, "between four and six")
-print(a)
-
-a.insert(4, "between what numbers ?")
-print(a)
+primes.extend([23,29,31])
+print(primes)
