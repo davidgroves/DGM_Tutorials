@@ -1,4 +1,4 @@
-# Week5, Example6
+# Week5, Program6
 
 alphabet = {1: "A", 2: "B", 3: "C", 4: "D", 5: "E"}
 

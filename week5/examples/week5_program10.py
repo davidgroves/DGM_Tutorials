@@ -1,4 +1,4 @@
-# Week5, Example10
+# Week5, Program10
 
 # Open a file for appending.
 yourfile = open("helloworld.txt", "a")

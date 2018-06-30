@@ -1,4 +1,4 @@
-# Week5, Example5
+# Week5, Program5
 
 year = {}  # An empty dictionary.
 

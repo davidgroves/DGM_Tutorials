@@ -1,18 +1,17 @@
 # Week4, Program8
 
-s = "The quick brown fox jumps over the lazy dog"
+a = "Hello"
+b = "Hello"
+c = "World"
+d = "World"
 
-print(s[2])
-print(s[4:9])
-print(s[10:15])
-print(s[:-3])
-print(s[-3:])
-print(s[16:25])
+print(a == b)
+print(a == c)
+print(b == d)
+print(b == a)
+print(d == c)
 
-print("")
-print("These are a bit more strange !")
-print("==============================")
-print("")
-
-print(s[::-1])
-print(s[::2])
+e = a + b
+print(a + b == e)
+print(b + a == a + b)
+print(a == e)

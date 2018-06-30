@@ -1,4 +1,4 @@
-# Week5, Example2
+# Week5, Program2
 
 import random
 

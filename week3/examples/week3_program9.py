@@ -1,14 +1,13 @@
 # Week3, Program9
 
-a = 45
-b = 332
+a = ["Hello", "World"]
+print(a)
 
-c = a / b
+b = [1, 1, 2, 3, 5, 8]
+print(b)
 
-print(f"{c}")
-print(f"{c:.1}")
-print(f"{c:.2}")
-print(f"{c:.3}")
-print(f"{c:.4}")
-print(f"{c:.5}")
-print(f"{c:.6}")
+c = [1.1, 2.2, 3.3, 4.4]
+print(c)
+
+d = ["Hello", -1, 3.1415]
+print(d)
