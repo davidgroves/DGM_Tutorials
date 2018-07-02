@@ -1,4 +1,4 @@
-# Week2, Program2
+# Week2, Program1
 
 a = "Hello World"
 print(a)
