@@ -1,83 +1,90 @@
-# Week9, Homework3
+# Week9, Homework4
 
-import collections
 import random
+import statistics
 import matplotlib.pyplot as plt
 
 def roll_die():
     return random.randint(1,6)
 
-end_position = {}
+def roll_to_start():
+    turns_to_start = 0
+    while True:
+        turns_to_start += 1
+        if roll_die() == 6:
+            return turns_to_start
 
-for i in range(1,31):
-    end_position[i] = i
+def bounce(square_landed_on):
+    return 30 - (square_landed_on - 30)
 
-end_position[3] = 22
-end_position[5] = 8
-end_position[11] = 26
-end_position[20] = 29
+def end_square(square_landed_on):
+    # Ladders
+    if square_landed_on == 3:
+        return 22
+    if square_landed_on == 5:
+        return 8
+    if square_landed_on == 11:
+        return 26
+    if square_landed_on == 20:
+        return 29
 
-end_position[17] = 4
-end_position[19] = 7
-end_position[21] = 9
-end_position[27] = 1
+    # Snakes
+    if square_landed_on == 17:
+        return 4
+    if square_landed_on == 19:
+        return 7
+    if square_landed_on == 21:
+        return 9
+    if square_landed_on == 27:
+        return 1
 
-total_turns = 0
-shortest_game = 999999999   # Make our short game really long.
-longest_game = 0            # Make our long game really short.
+    # No snake or ladder, but passed 30 ?
+    if square_landed_on > 30:
+        return bounce(square_landed_on)
+        pass
+
+    # This is just where we are.
+    return square_landed_on
 
 def game():
-    pos = 1
-    turns = 0
-    can_move = False
+    position = 1
 
+    # Calculate how many turns it took to roll a 6 to start.
+    turns = roll_to_start()
+
+    # Play out the game
     while True:
         turns += 1
+        position = end_square(position + roll_die())
 
-        # We can't move until we roll a 6.
-        if can_move == False:
-            if roll_die() == 6:
-                can_move = True
-        else:
-            prospective_position = pos + roll_die()
+        # Have we won ?
+        if position == 30:
+            return turns
 
-            if prospective_position <= 30:
-                pos = end_position[prospective_position]
-
-            if prospective_position > 30:
-                pos = end_position[30 - (prospective_position - 30)]
-
-            if pos == 30:
-                return turns
+####################
+### MAIN PROGRAM ###
+####################
 
 number_of_games = 10000
-turn_count = collections.defaultdict(int)
+turns = []          # A list with the turncount of each game played.
 
 for i in range(number_of_games):
-    turn_count[game()] += 1
+    turns.append(game())
 
-plt.bar(turn_count.keys(), turn_count.values())
+print (f"Mean of number of turns: {statistics.mean(turns):.2f}")
+print (f"Median of number of turns: {statistics.median(turns):.2f}")
+
+try:
+    print (f"Mode of number of turns: {statistics.mode(turns):.2f}")
+except statistics.StatisticsError:
+    print (f"There is no unique mode")
+
+print (f"Standard Deviation of number of turns: {statistics.stdev(turns):.2f}")
+print (f"Variance of number of turns: {statistics.variance(turns):.2f}")
+
+# Draw a histogram
+plt.hist(turns, 100)
 plt.xlabel("Turns")
 plt.ylabel("Games")
-
-# Work out the mean game length.
-# And while at it, work out the modal game length as well.
-total_turns = 0
-mode_count = 0
-mode_length = 0
-
-for length, gamecount in turn_count.items():
-    total_turns += (length * gamecount)
-    if gamecount > mode_count:
-        mode_length = length
-        mode_count = gamecount
-
-mean_turns = total_turns / number_of_games
-
-# Build up a title string
-title = "Number of games that take X turns\n"
-title += f"Mean Game Length = {str(mean_turns)}\n"
-title += f"Modal Game Length = {str(mode_length)}\n"
-
-plt.title(title)
+plt.title("Number of games that take X turns")
 plt.show()
