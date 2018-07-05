@@ -1,4 +1,4 @@
-# Week6, Homework5
+# Week6, Extra Credit
 
 from PIL import Image, ImageDraw, ImageColor
 
