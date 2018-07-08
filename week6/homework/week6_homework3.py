@@ -24,7 +24,7 @@ point = [random.randint(0,500), random.randint(0,500)]
 
 # We will repeat this 1 million times.
 i = 0
-while i < 1000000:
+while i < 10000:
     # Draw a dot at the current position
     draw.point(point)
 
@@ -40,5 +40,6 @@ while i < 1000000:
     # Add one to our loop counter
     i = i + 1
 
-# Show the image.
-image.show()
+    # Check if we want to save the image.
+    if i % 500 == 0:
+        image.save(f"image{i}.png")
