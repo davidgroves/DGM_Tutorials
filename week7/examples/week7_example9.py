@@ -1,18 +1,21 @@
 # Week7, Example9
 
-def add(a,b):
+
+def add(a, b):
     return a + b
 
-def subtract(a,b):
+
+def subtract(a, b):
     return a - b
 
+
 maths = add
-print(maths(3,3))
-print(maths(128,64))
+print(maths(3, 3))
+print(maths(128, 64))
 
 maths = subtract
-print(maths(3,3))
-print(maths(128,64))
+print(maths(3, 3))
+print(maths(128, 64))
 
 maths = add
-print(maths(9,5))
+print(maths(9, 5))
