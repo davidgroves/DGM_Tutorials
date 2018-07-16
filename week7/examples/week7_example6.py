@@ -1,8 +1,7 @@
 # Week7, Example6
 
-def add(a, b):
-    print(f"{a} + {b} = {a - b}")
+def say_hello(firstname, surname):
+    print("<Say this in a robot voice>")
+    print(f"Hello Firstname: {firstname}, Surname: {surname}")
 
-add(4,2)
-add(10,6)
-add(8,4)
+say_hello("David", "Groves")

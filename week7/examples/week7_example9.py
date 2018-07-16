@@ -1,17 +1,18 @@
 # Week7, Example9
 
-def maths(a, b, operator="+"):
-    if operator == "+":
-        return a + b
-    if operator == "-":
-        return a - b
-    if operator == "*":
-        return a * b
-    if operator == "/":
-        return a / b
+def add(a,b):
+    return a + b
 
-print(maths(3,3,"+"))
-print(maths(4,6))
-print(maths(6,3,"*"))
-print(maths(16,4,"/"))
-print(maths(128,128))
+def subtract(a,b):
+    return a - b
+
+maths = add
+print(maths(3,3))
+print(maths(128,64))
+
+maths = subtract
+print(maths(3,3))
+print(maths(128,64))
+
+maths = add
+print(maths(9,5))

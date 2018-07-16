@@ -1,6 +1,13 @@
 # Week7, Example4
 
-def add(a, b):
-    return a + b
+a = 4
+b = 2
+print(f"{a} + {b} = {a - b}")
 
-print(add("Hello", 3))
+a = 10
+b = 6
+print(f"{a} + {b} = {a - b}")
+
+a = 8
+b = 4
+print(f"{a} + {b} = {a - b}")

@@ -1,13 +1,8 @@
 # Week7, Example5
 
-a = 4
-b = 2
-print(f"{a} + {b} = {a - b}")
+def add(a, b):
+    print(f"{a} + {b} = {a - b}")
 
-a = 10
-b = 6
-print(f"{a} + {b} = {a - b}")
-
-a = 8
-b = 4
-print(f"{a} + {b} = {a - b}")
+add(4,2)
+add(10,6)
+add(8,4)

@@ -1,7 +1,14 @@
 # Week7, Example7
 
-def say_hello(firstname, surname):
-    print("<Say this in a robot voice>")
-    print(f"Hello Firstname: {firstname}, Surname: {surname}")
+def print_seperated(items, seperator=" "):
+    for i in items[:-1]:
+        print (f"{i}{seperator}", end="")
+    print(f"{items[-1]}")
 
-say_hello("David", "Groves")
+numbers = [1,2,3,4,5]
+
+print_seperated(numbers)
+print_seperated(numbers, seperator=",")
+print_seperated(numbers, seperator=", ")
+print_seperated(numbers, seperator="-->")
+print_seperated(numbers, seperator="\n")
