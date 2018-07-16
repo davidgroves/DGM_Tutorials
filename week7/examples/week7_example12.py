@@ -1,9 +1,21 @@
 # Week7, Example12
 
-def print_area_square(a,b):
-    print(f"A square with sides {a}m by {b}m has area {a * b}m squared")
+import random
 
-print_area_square(3,5)
-print_area_square(2,6)
-print_area_square(5,7)
-print_area_square(4,4)
+print(f"Rolling 2 dice with 6 sides 10 times")
+results = []
+for i in range(10):
+    results.append(random.randint(1,6) + random.randint(1,6))
+print(results)
+
+print(f"Rolling 3 dice with 4 sides 10 times")
+results = []
+for i in range(10):
+    results.append(random.randint(1,4) + random.randint(1,4) + random.randint(1,4))
+print(results)
+
+print(f"Rolling 1 die with 20 sides 5 times")
+results = []
+for i in range(5):
+    results.append(random.randint(1,20))
+print(results)
