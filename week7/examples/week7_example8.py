@@ -1,6 +1,8 @@
 # Week7, Example8
 
+
 def maths(a, b, operator="+"):
+
     if operator == "+":
         return a + b
     if operator == "-":
@@ -10,8 +12,9 @@ def maths(a, b, operator="+"):
     if operator == "/":
         return a / b
 
-print(maths(3,3,"+"))
-print(maths(4,6))
-print(maths(6,3,"*"))
-print(maths(16,4,"/"))
-print(maths(128,128))
+
+print(maths(3, 3, "+"))
+print(maths(4, 6))
+print(maths(6, 3, "*"))
+print(maths(16, 4, "/"))
+print(maths(128, 128))
