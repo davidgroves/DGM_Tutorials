@@ -1,10 +1,18 @@
 # Week4, Program7
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
+s = "The quick brown fox jumps over the lazy dog"
 
-print(numbers[::2])
-print(numbers[1::2])
-print(numbers[::-2])
-print(numbers[-2::-2])
-print(numbers[::-3])
-print(numbers[-2::-3])
+print(s[2])
+print(s[4:9])
+print(s[10:15])
+print(s[:-3])
+print(s[-3:])
+print(s[16:25])
+
+print("")
+print("These are a bit more strange !")
+print("==============================")
+print("")
+
+print(s[::-1])
+print(s[::2])

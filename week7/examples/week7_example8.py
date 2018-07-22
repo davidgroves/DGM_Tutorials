@@ -1,14 +1,20 @@
 # Week7, Example8
 
-def print_seperated(items, seperator=" "):
-    for i in items[:-1]:
-        print (f"{i}{seperator}", end="")
-    print(f"{items[-1]}")
 
-numbers = [1,2,3,4,5]
+def maths(a, b, operator="+"):
 
-print_seperated(numbers)
-print_seperated(numbers, seperator=",")
-print_seperated(numbers, seperator=", ")
-print_seperated(numbers, seperator="-->")
-print_seperated(numbers, seperator="\n")
+    if operator == "+":
+        return a + b
+    if operator == "-":
+        return a - b
+    if operator == "*":
+        return a * b
+    if operator == "/":
+        return a / b
+
+
+print(maths(3, 3, "+"))
+print(maths(4, 6))
+print(maths(6, 3, "*"))
+print(maths(16, 4, "/"))
+print(maths(128, 128))

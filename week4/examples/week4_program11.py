@@ -5,17 +5,15 @@ b = "Hello"
 c = "World"
 d = "World"
 
-print(a == b or c == d)
-print(a != b or c != d)
-print(a == d or b == c)
+print(a == b and c == d)
+print(a != b and c != d)
+print(a != d and b != c)
 
-print (5 > 8 or 4 < 6)
-print (3 > 9 or 5 > 7)
-print (0 < 1 or 4 > 6)
-print (a == c or 5 < 9)
-print (a == d or d == "World")
+print (5 > 8 and 4 < 6)
+print (9 > 4 and 7 > 5)
+print (0 < 1 and 4 > 6)
+print (a == b and 5 < 9)
+print (a == d and d == "World")
 
-# Tricky !
-print (a == c or b == "hello")
-print (int(4.7) == 4 or int(5.6) == 6)
-print (True == False or False != True)
+print (a == c and b == "hello")
+print (int(4.7) == 4 and int(5.6) != 6)

@@ -1,18 +1,15 @@
 # Week7, Example10
 
-def add(a,b):
-    return a + b
+# Calculate the area of a rectangle.
+print(f"A rectangle with sides 3m by 5m has area { 3 * 5 }m squared")
 
-def subtract(a,b):
-    return a - b
+# Calculate the area of a different rectangle.
+print(f"A rectangle with sides 2m by 6m has area { 2 * 6 }m squared")
 
-maths = add
-print(maths(3,3))
-print(maths(128,64))
+# Calculate the area of yet another different rectangle.
+print(f"A rectangle with sides 5m by 7m has area { 5 * 7 }m squared")
 
-maths = subtract
-print(maths(3,3))
-print(maths(128,64))
+# Calculate the area of a final rectangle.
+print(f"A rectangle with sides 4m by 4m has area { 4 * 4 }m squared")
 
-maths = add
-print(maths(9,5))
+

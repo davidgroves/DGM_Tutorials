@@ -5,16 +5,17 @@ b = "Hello"
 c = "World"
 d = "World"
 
-print (a != c)
-print (a != b)
-print (a != d)
-print (a + b != b + a)
-print (a != "Hello")
-print (a + a != "World")
-print (a + a != "HelloHello")
-print (a + a + a != "HelloHelloHello")
+print(a == b or c == d)
+print(a != b or c != d)
+print(a == d or b == c)
 
-# Extra Credit
-# You haven't been taught this, but can you work out
-# if it is True or False
-print (a * 2 != "HelloHello")
+print (5 > 8 or 4 < 6)
+print (3 > 9 or 5 > 7)
+print (0 < 1 or 4 > 6)
+print (a == c or 5 < 9)
+print (a == d or d == "World")
+
+# Tricky !
+print (a == c or b == "hello")
+print (int(4.7) == 4 or int(5.6) == 6)
+print (True == False or False != True)
