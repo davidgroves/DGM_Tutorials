@@ -51,4 +51,3 @@ def game():
 
         print(pos)
 
-print(turns)
