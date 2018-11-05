@@ -38,7 +38,7 @@ while True:
 
     # Check we haven't overshot
     if prospective_position <= 30:
-        pos = pos = end_position[prospective_position]
+        pos = end_position[prospective_position]
 
     # Check for winning
     if pos == 30:
