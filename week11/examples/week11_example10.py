@@ -1,4 +1,4 @@
-# Week11, Example9
+# Week11, Example10
 
 import json
 import datetime
@@ -8,4 +8,4 @@ person = {
     "dob": datetime.date(year=1879, month=3, day=14)
 }
 
-print(json.dumps(person))
+print(person["dob"].isoformat())
