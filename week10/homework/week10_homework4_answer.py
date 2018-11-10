@@ -1,23 +1,15 @@
 # Week10, Homework4, Answer
 
-import math
+import datetime
 
-def is_prime(n):
-    if n == 2:
-        return True
-    if n % 2 == 0 or n <= 1:
-        return False
+def day_of_week(day, month, year):
+    day_list = ["Monday", "Tuesday", "Wednesday", "Thursday",
+                "Friday", "Saturday", "Sunday"]
 
-    sqr = int(math.sqrt(n)) + 1
+    day = datetime.date(day=day, month=month, year=year)
+    return(day_list[day.weekday()])
 
-    for divisor in range(3, sqr, 2):
-        if n % divisor == 0:
-            return False
-    return True
-
-def test_is_prime():
-    assert is_prime(1) == False
-    assert is_prime(2) == True
-    assert is_prime(3) == True
-    assert is_prime(5) == True
-    assert is_prime(9) == False
+def test_day_of_week():
+    assert "Tuesday" == day_of_week(3,7,2018)
+    assert "Saturday" == day_of_week(1,1,2000)
+    assert "Wednesday" == day_of_week(29,2,2012)
