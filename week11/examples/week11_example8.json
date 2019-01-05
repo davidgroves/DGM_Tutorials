@@ -1,0 +1,14 @@
+{
+  "Firstname": "Ronald",
+  "Surname": "Reagan",
+  "Terms": [
+    {
+      "Start": 1981,
+      "End": 1985
+    },
+    {
+      "Start": 1985,
+      "End": 1989
+    }
+  ]
+}
